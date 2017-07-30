@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Calendar_LawrenceChu.HomePage"
+    Title="Home Page">
+
+    <StackLayout BackgroundColor="Transparent" Padding="40" >
+
+        <Entry x:Name="Username" Text="Username" TextColor="Silver"/>
+        <Entry x:Name="Password" Text="Password" TextColor="Silver"/>     
+        <Button Clicked="OnLoginClicked" 
+                Text="Login in" 
+                BackgroundColor="Green" 
+                TextColor="White"/>
+        <Button Text="Skip" Clicked="OnSkipClicked"/>
+
+    </StackLayout>
+    
+</ContentPage>

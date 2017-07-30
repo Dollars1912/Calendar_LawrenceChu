@@ -8,8 +8,9 @@ namespace Calendar_LawrenceChu
         {
             InitializeComponent();
 
-            MainPage = new Calendar_LawrenceChuPage();
-        }
+			//MainPage = new Calendar_LawrenceChuPage();
+            MainPage = new NavigationPage(new HomePage());
+		}
 
         protected override void OnStart()
         {

@@ -2,14 +2,22 @@
 
 namespace Calendar_LawrenceChu
 {
-    public partial class Calendar_LawrenceChuPage : ContentPage
+    public partial class MonthPage : ContentPage
     {
-        public Calendar_LawrenceChuPage()
+        public MonthPage()
         {
 			InitializeComponent();
 
 			var layout = new AbsoluteLayout { Padding = new Thickness(5, 10) };
 			this.Content = layout;
+
+            // add title
+            var title = new Label { FontSize = 20 };
+			title.TextColor = Color.Red;
+			title.TranslationX = 100;
+			title.TranslationY = 50;
+            title.Text = Date.FormattedMonth();
+			layout.Children.Add(title);
 
 			// add date
 			Point startPoint = new Point(20, 100);

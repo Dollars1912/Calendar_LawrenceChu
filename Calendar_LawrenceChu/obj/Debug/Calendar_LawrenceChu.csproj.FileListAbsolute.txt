@@ -14,6 +14,8 @@
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.csprojResolveAssemblyReference.cache
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.csproj.CoreCompileInputs.cache
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.App.xaml.g.cs
-/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.Calendar_LawrenceChuPage.xaml.g.cs
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.dll
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.pdb
+/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.HomePage.xaml.g.cs
+/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.YearPage.xaml.g.cs
+/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.MonthPage.xaml.g.cs
