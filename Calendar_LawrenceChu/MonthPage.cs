@@ -23,7 +23,22 @@ namespace Calendar_LawrenceChu
 			Point startPoint = new Point(20, 100);
 			float offsetX = 50;
 			float offsetY = 55;
-			for (int i = 0; i < 31; i++)
+            int[] days = {7, 1, 2, 3, 4, 5, 6};
+            int dayCount = 0;
+            foreach (var day in days)
+            {
+				var label = new Label { FontSize = 20 };
+                //TODO center
+                label.FormattedText = Date.FormattedDay(day).ToString();
+				label.TextColor = Color.Red;
+				label.TranslationX = startPoint.X + offsetX * dayCount;
+				label.TranslationY = startPoint.Y;
+				layout.Children.Add(label);
+                dayCount++;
+            }
+
+            startPoint.Y += offsetY;
+            for (int i = 0; i < 31; i++)
 			{
 				int date = i + 1;
 				var label = new Label { FontSize = 20 };

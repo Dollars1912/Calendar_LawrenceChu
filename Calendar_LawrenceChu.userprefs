@@ -2,10 +2,13 @@
   <MonoDevelop.Ide.ItemProperties.Calendar__LawrenceChu.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.75F58459-5EDC-4368-B095-010C5DAEBD5E" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Calendar_LawrenceChu/MonthPage.cs">
     <Files>
-      <File FileName="Calendar_LawrenceChu/YearPage.xaml" Line="12" Column="38" />
-      <File FileName="Calendar_LawrenceChu/YearPage.xaml.cs" Line="29" Column="44" />
-      <File FileName="Calendar_LawrenceChu/Date.cs" Line="6" Column="22" />
-      <File FileName="Calendar_LawrenceChu/MonthPage.cs" Line="15" Column="21" />
+      <File FileName="Calendar_LawrenceChu/YearPage.xaml" Line="13" Column="28" />
+      <File FileName="Calendar_LawrenceChu/YearPage.xaml.cs" Line="27" Column="26" />
+      <File FileName="Calendar_LawrenceChu/Date.cs" Line="39" Column="19" />
+      <File FileName="Calendar_LawrenceChu/MonthPage.cs" Line="22" Column="15" />
+      <File FileName="Calendar_LawrenceChu/HomePage.xaml.cs" Line="20" Column="1" />
+      <File FileName="Calendar_LawrenceChu/HomePage.xaml" Line="20" Column="1" />
+      <File FileName="Calendar_LawrenceChu/MonthPage.xaml" Line="9" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
