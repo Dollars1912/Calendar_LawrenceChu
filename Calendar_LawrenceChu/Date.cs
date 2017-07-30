@@ -30,25 +30,25 @@ namespace Calendar_LawrenceChu
 				case 2:
 					return "Feb";
 				case 3:
-					return "Jan";
+					return "Mar";
 				case 4:
-					return "Jan";
+					return "Apr";
 				case 5:
-					return "Jan";
+					return "May";
 				case 6:
-					return "Jan";
+					return "Jun";
 				case 7:
-					return "Jan";
+					return "Jul";
 				case 8:
-					return "Jan";
+					return "Aug";
 				case 9:
-					return "Jan";
+					return "Sep";
 				case 10:
-					return "Jan";
+					return "Oct";
 				case 11:
-					return "Jan";
+					return "Nov";
 				case 12:
-					return "Jan";
+					return "Dec";
             }
             return "";
         }

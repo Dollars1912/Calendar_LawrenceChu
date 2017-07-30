@@ -17,6 +17,7 @@ namespace Calendar_LawrenceChu
 			title.TranslationX = 100;
 			title.TranslationY = 50;
             title.Text = Date.FormattedMonth();
+            title.TextColor = Color.LightSeaGreen;
 			layout.Children.Add(title);
 
 			// add date

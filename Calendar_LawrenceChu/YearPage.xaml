@@ -4,29 +4,36 @@
     x:Class="Calendar_LawrenceChu.YearPage" Title="Year Page">
     <StackLayout BackgroundColor="Transparent" Padding="40">
         <StackLayout Orientation="Horizontal">
-            <Label x:Name="YearLabel" Text="2017" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
-            <Button x:Name="PlusButton" Text="+" TextColor="Aqua" WidthRequest="100" Clicked="OnPlusOrMinusClicked"/>
-            <Button x:Name="MinusButton" Text="-" TextColor="Aqua" WidthRequest="100" Clicked="OnPlusOrMinusClicked"/>
+            
+            <Button x:Name="MinusButton" FontSize="33" Text= "-" TextColor="Silver" WidthRequest="40" Clicked="OnPlusOrMinusClicked"/>
+            <Label x:Name="YearLabel" FontSize="33" Text="2017" TextColor="Silver" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+            <Button x:Name="PlusButton" FontSize="33" Text= "+" TextColor="Silver" WidthRequest="40" Clicked="OnPlusOrMinusClicked"/>
+
         </StackLayout>
-        <StackLayout Orientation="Horizontal" HeightRequest="200" >
-            <Button x:Name="JanButton" Text="JAN" WidthRequest="100" Clicked="OnMonthClicked"/>
-            <Button x:Name="FebButton" Text="FEB" WidthRequest="100"/>
-            <Button Text="MARCH" WidthRequest="100"/>
+        
+        <StackLayout Orientation="Horizontal" HeightRequest="100">
+            <Button x:Name="JanButton" FontSize="33" Text="JAN" WidthRequest="90" Clicked="OnMonthClicked"/>
+            <Button x:Name="FebButton" FontSize="33" Text="FEB" WidthRequest="100" Clicked="OnMonthClicked"/>
+            <Button x:Name="MarButton" FontSize="33" Text="MAR" WidthRequest="100" Clicked="OnMonthClicked"/>
         </StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <Button Text="JAN" Clicked="OnMonthClicked"/>
-            <Button Text="FEB" />
-            <Button Text="MARCH" />
+        
+        <StackLayout Orientation="Horizontal" HeightRequest="100">
+            <Button x:Name="AprButton" FontSize="33" Text="APR" WidthRequest="90" Clicked="OnMonthClicked"/>
+            <Button x:Name="MayButton" FontSize="33" Text="MAY" WidthRequest="100" Clicked="OnMonthClicked"/>
+            <Button x:Name="JunButton" FontSize="33" Text="JUN" WidthRequest="100" Clicked="OnMonthClicked"/>
         </StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <Button Text="JAN" />
-            <Button Text="FEB" />
-            <Button Text="MARCH" />
+        
+        <StackLayout Orientation="Horizontal" HeightRequest="100">
+            <Button x:Name="JulButton" FontSize="33" Text="JUL" WidthRequest="90" Clicked="OnMonthClicked"/>
+            <Button x:Name="AugButton" FontSize="33" Text="AUG" WidthRequest="100" Clicked="OnMonthClicked"/>
+            <Button x:Name="SepButton" FontSize="33" Text="SEP" WidthRequest="100" Clicked="OnMonthClicked"/>
         </StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <Button Text="JAN" />
-            <Button Text="FEB" />
-            <Button Text="MARCH" />
+        
+        <StackLayout Orientation="Horizontal" HeightRequest="100">
+            <Button x:Name="OctButton" FontSize="33" Text="OCT" WidthRequest="90" Clicked="OnMonthClicked"/>
+            <Button x:Name="NovButton" FontSize="33" Text="NOV" WidthRequest="100" Clicked="OnMonthClicked"/>
+            <Button x:Name="DecButton" FontSize="33" Text="DEC" WidthRequest="100" Clicked="OnMonthClicked"/>
         </StackLayout>
+        
     </StackLayout>
 </ContentPage>
