@@ -12,14 +12,14 @@ namespace Calendar_LawrenceChu
             InitializeComponent();
         }
 
-		async void OnLoginClicked(object sender, System.EventArgs e)
-		{
+        async void OnLoginClicked(object sender, System.EventArgs e)
+        {
             await Navigation.PushAsync(new YearPage());
-		}
+        }
 
-		async void OnSkipClicked(object sender, System.EventArgs e)
-		{
+        async void OnSkipClicked(object sender, System.EventArgs e)
+        {
             await Navigation.PushAsync(new YearPage());
-		}
+        }
     }
 }
