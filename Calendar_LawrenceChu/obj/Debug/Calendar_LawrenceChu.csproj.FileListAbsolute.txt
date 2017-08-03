@@ -20,3 +20,4 @@
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.YearPage.xaml.g.cs
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.MonthPage.xaml.g.cs
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.NotePage.xaml.g.cs
+/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.DayPage.xaml.g.cs

@@ -39,6 +39,9 @@
     <EmbeddedResource Include="NotePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="DayPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -57,6 +60,9 @@
     <Compile Include="Date.cs" />
     <Compile Include="NotePage.xaml.cs">
       <DependentUpon>NotePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DayPage.xaml.cs">
+      <DependentUpon>DayPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -1,15 +1,6 @@
 ﻿<Properties StartupConfiguration="{BAD9C3DA-0515-4337-9E10-8543EA264521}|Default">
   <MonoDevelop.Ide.ItemProperties.Calendar__LawrenceChu.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.75F58459-5EDC-4368-B095-010C5DAEBD5E" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Calendar_LawrenceChu/NotePage.xaml">
-    <Files>
-      <File FileName="Calendar_LawrenceChu/MonthPage.cs" Line="69" Column="41" />
-      <File FileName="Calendar_LawrenceChu/MonthPage.xaml" Line="7" Column="15" />
-      <File FileName="Calendar_LawrenceChu/NotePage.xaml" Line="11" Column="128" />
-      <File FileName="Calendar_LawrenceChu/HomePage.xaml.cs" Line="11" Column="10" />
-      <File FileName="Calendar_LawrenceChu/HomePage.xaml" Line="30" Column="1" />
-      <File FileName="Calendar_LawrenceChu/NotePage.xaml.cs" Line="16" Column="43" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

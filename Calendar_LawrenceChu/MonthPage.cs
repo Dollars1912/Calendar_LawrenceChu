@@ -55,13 +55,13 @@ namespace Calendar_LawrenceChu
                 buttonDay.Clicked += OnButtonDayClicked;
             }
             async void OnButtonDayClicked(object sender, System.EventArgs e){
-                await Navigation.PushAsync(new HomePage());
+                await Navigation.PushAsync(new DayPage());
             }
 
             // add button
             var button = new Button();
-            button.Image = "minions.png";
             button.Text = "Add Notes";
+            button.FontAttributes = FontAttributes.Italic;
             button.FontSize = 10;
             button.TextColor = Color.White;
             button.TranslationX = 240;

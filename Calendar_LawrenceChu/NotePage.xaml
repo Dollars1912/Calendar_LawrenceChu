@@ -3,13 +3,13 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="Calendar_LawrenceChu.NotePage"
     BackgroundColor = "#5F9EA0"
-    Title = "NOTES">
+    Title = "Notes">
 
     <StackLayout Padding="33">
         <Label Text="Add Notes Here" FontSize = "25" TextColor = "White" FontAttributes = "Italic" HorizontalTextAlignment = "Start"/>
         <Entry HeightRequest = "200" HorizontalTextAlignment="Start"/>
         <Button BackgroundColor="#B0E0E6" Clicked="Button_Clicked" Text="SAVE" TextColor="White" FontAttributes="Bold"/>
-        <Label x:Name="MainLabel" HorizontalTextAlignment="Center" TextColor = "White" FontSize="25" FontAttributes="Bold"/>
+        <Label x:Name="MainLabel" HorizontalTextAlignment="Start" TextColor = "White" FontSize="15" FontAttributes="Bold"/>
     </StackLayout>
     
 </ContentPage>

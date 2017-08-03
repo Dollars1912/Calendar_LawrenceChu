@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Calendar_LawrenceChu.YearPage" Title="YEAR" BackgroundColor="#5F9EA0">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Calendar_LawrenceChu.YearPage" Title="Year" BackgroundColor="#5F9EA0">
     <StackLayout Padding="40">
         <StackLayout Orientation="Horizontal">
             <Button x:Name="MinusButton" FontSize="10" FontAttributes = "Italic" Text="Past Year" TextColor="White" WidthRequest="50" Clicked="OnPlusOrMinusClicked" />
