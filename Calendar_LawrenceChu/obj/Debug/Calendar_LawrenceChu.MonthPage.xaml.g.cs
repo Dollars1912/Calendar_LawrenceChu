@@ -11,7 +11,7 @@
 namespace Calendar_LawrenceChu {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/MonthPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/Calendar_LawrenceChu/MonthPage.xaml")]
     public partial class MonthPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

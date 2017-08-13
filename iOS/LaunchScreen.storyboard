@@ -18,18 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0.16862745098039217" green="0.61960784313725492" blue="0.54117647058823526" alpha="1"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" usesAttributedText="YES">
-                                <rect key="frame" x="91" y="158" width="232" height="147"/>
-                                <nil key="textColor"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Calendar">
-                                        <attributes>
-                                            <color key="NSColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
-                                            <font key="NSFont" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" size="44"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="Calendar">
+                                <rect key="frame" x="81" y="164" width="232" height="147"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="1" green="1" blue="1" alpha="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44" weight="black"/>
                             </label>
                         </subviews>
                     </view>
