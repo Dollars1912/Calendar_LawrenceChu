@@ -117,3 +117,6 @@
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/iOS/obj/iPhoneSimulator/Debug/Calendar_LawrenceChu.iOS.exe
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/iOS/obj/iPhoneSimulator/Debug/Calendar_LawrenceChu.iOS.pdb
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Calendar_LawrenceChu.dll.config
+/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Calendar_LawrenceChu.dll.config
+/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.xml

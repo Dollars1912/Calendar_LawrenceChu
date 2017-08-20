@@ -62,8 +62,9 @@
     <Compile Include="DayPage.xaml.cs">
       <DependentUpon>DayPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Date.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="Models\Date.cs" />
+    <Compile Include="Models\Event.cs" />
+    <Compile Include="Models\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
@@ -87,6 +88,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />

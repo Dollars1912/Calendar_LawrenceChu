@@ -1,17 +1,17 @@
 ﻿<Properties StartupConfiguration="{BAD9C3DA-0515-4337-9E10-8543EA264521}|Default">
   <MonoDevelop.Ide.ItemProperties.Calendar__LawrenceChu.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.75F58459-5EDC-4368-B095-010C5DAEBD5E" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Calendar_LawrenceChu/HomePage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Calendar_LawrenceChu/Models/Event.cs">
     <Files>
-      <File FileName="Calendar_LawrenceChu/User.cs" Line="51" Column="1" />
-      <File FileName="Calendar_LawrenceChu/HomePage.xaml.cs" Line="20" Column="10" />
+      <File FileName="Calendar_LawrenceChu/Models/User.cs" Line="60" Column="9" />
+      <File FileName="Calendar_LawrenceChu/HomePage.xaml.cs" Line="18" Column="27" />
+      <File FileName="Calendar_LawrenceChu/HomePage.xaml" Line="19" Column="32" />
+      <File FileName="Calendar_LawrenceChu/Models/Event.cs" Line="8" Column="14" />
+      <File FileName="Calendar_LawrenceChu/Models/Date.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/Calendar_LawrenceChu/User.cs" relfile="Calendar_LawrenceChu/User.cs" line="48" column="1" />
-      <Breakpoint file="/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/Calendar_LawrenceChu/User.cs" relfile="Calendar_LawrenceChu/User.cs" line="40" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

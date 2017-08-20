@@ -14,6 +14,10 @@
         <Grid Padding="0,0,0,65">
         <Entry x:Name="Password" Text="Password" FontSize="14" TextColor="Gray" FontAttributes="Italic" HeightRequest="35"/>  
         </Grid>
+
+        <Grid Padding="0,40,0,50">
+        <Label x:Name= "Message" Text="" FontAttributes="Bold" TextColor="Red" FontSize="20" HorizontalOptions="Center"/>
+        </Grid> 
         
         <Grid Padding="0,0,0,10">
         <Button Clicked="OnLoginClicked" 

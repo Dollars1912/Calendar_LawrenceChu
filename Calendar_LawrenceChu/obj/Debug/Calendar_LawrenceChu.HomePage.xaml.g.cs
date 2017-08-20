@@ -11,7 +11,7 @@
 namespace Calendar_LawrenceChu {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/Calendar_LawrenceChu/HomePage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/HomePage.xaml")]
     public partial class HomePage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -21,10 +21,14 @@ namespace Calendar_LawrenceChu {
         private global::Xamarin.Forms.Entry Password;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label Message;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(HomePage));
             Username = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Entry>(this, "Username");
             Password = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Entry>(this, "Password");
+            Message = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Label>(this, "Message");
         }
     }
 }
