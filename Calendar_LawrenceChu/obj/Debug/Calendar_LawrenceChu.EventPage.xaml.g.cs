@@ -11,8 +11,8 @@
 namespace Calendar_LawrenceChu {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/DayPage.xaml")]
-    public partial class DayPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/EventPage.xaml")]
+    public partial class EventPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Entry Title;
@@ -58,7 +58,7 @@ namespace Calendar_LawrenceChu {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(DayPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(EventPage));
             Title = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Entry>(this, "Title");
             Location = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Entry>(this, "Location");
             StartMinute = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Entry>(this, "StartMinute");

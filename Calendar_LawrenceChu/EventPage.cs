@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace Calendar_LawrenceChu
 {
-    public partial class DayPage : ContentPage
+    public partial class EventPage : ContentPage
     {
-        public DayPage()
+        public EventPage()
         {
             InitializeComponent();
         }

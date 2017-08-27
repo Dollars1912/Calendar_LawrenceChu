@@ -55,7 +55,7 @@ namespace Calendar_LawrenceChu
                 buttonDay.Clicked += OnButtonDayClicked;
             }
             async void OnButtonDayClicked(object sender, System.EventArgs e){
-                await Navigation.PushAsync(new DayPage());
+                await Navigation.PushAsync(new EventPage());
             }
 
             // add button

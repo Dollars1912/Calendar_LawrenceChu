@@ -20,7 +20,6 @@
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.YearPage.xaml.g.cs
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.MonthPage.xaml.g.cs
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.NotePage.xaml.g.cs
-/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.DayPage.xaml.g.cs
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/Calendar_LawrenceChu/bin/Debug/Calendar_LawrenceChu.dll
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/Calendar_LawrenceChu/bin/Debug/Calendar_LawrenceChu.pdb
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/Calendar_LawrenceChu/bin/Debug/Newtonsoft.Json.dll
@@ -60,3 +59,4 @@
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/bin/Debug/System.Net.Http.Extensions.xml
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/bin/Debug/System.Net.Http.Primitives.xml
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.csproj.App.config
+/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.EventPage.xaml.g.cs

@@ -38,7 +38,7 @@
     <EmbeddedResource Include="NotePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="DayPage.xaml">
+    <EmbeddedResource Include="EventPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
@@ -59,8 +59,8 @@
     <Compile Include="NotePage.xaml.cs">
       <DependentUpon>NotePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DayPage.xaml.cs">
-      <DependentUpon>DayPage.xaml</DependentUpon>
+    <Compile Include="EventPage.cs">
+      <DependentUpon>EventPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Time.cs" />
     <Compile Include="Models\Event.cs" />
