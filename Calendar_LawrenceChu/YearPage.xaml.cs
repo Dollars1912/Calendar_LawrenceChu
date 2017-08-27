@@ -19,34 +19,35 @@ namespace Calendar_LawrenceChu
             } else if (sender == MinusButton) {
 				YearLabel.Text = (Int32.Parse(YearLabel.Text) - 1).ToString();
 			}
+            Time.CurrentTime.Year = Int32.Parse(YearLabel.Text);
 		}
 
 		async void OnMonthClicked(object sender, System.EventArgs e)
 		{
             if (sender == JanButton) {
-                Date.Month = 1;
+                Time.CurrentTime.Month = 1;
             } else if (sender == FebButton) {
-                Date.Month = 2;
+                Time.CurrentTime.Month = 2;
             } else if (sender == MarButton) {
-                Date.Month = 3;
+                Time.CurrentTime.Month = 3;
             } else if (sender == AprButton) {
-				Date.Month = 4;
+				Time.CurrentTime.Month = 4;
             } else if (sender == MayButton) {
-				Date.Month = 5;
+				Time.CurrentTime.Month = 5;
             } else if (sender == JunButton) {
-				Date.Month = 6;
+				Time.CurrentTime.Month = 6;
             } else if (sender == JulButton) {
-				Date.Month = 7;
+				Time.CurrentTime.Month = 7;
             } else if (sender == AugButton) {
-				Date.Month = 8;
+				Time.CurrentTime.Month = 8;
             } else if (sender == SepButton) {
-				Date.Month = 9;
+				Time.CurrentTime.Month = 9;
             } else if (sender == OctButton) {
-				Date.Month = 10;
+				Time.CurrentTime.Month = 10;
             } else if (sender == NovButton) {
-				Date.Month = 11;
+				Time.CurrentTime.Month = 11;
             } else if (sender == DecButton) {
-				Date.Month = 12;
+				Time.CurrentTime.Month = 12;
             }
             // TODO
 			await Navigation.PushAsync(new MonthPage());

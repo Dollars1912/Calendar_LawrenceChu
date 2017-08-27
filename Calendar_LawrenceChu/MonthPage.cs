@@ -17,7 +17,7 @@ namespace Calendar_LawrenceChu
             title.FontSize = 40;
             title.TranslationX = 19;
             title.TranslationY = 40;
-            title.Text = Date.FormattedMonth();
+            title.Text = Time.CurrentTime.FormattedMonth();
             title.TextColor = Color.White;
             layout.Children.Add(title);
 
@@ -31,7 +31,7 @@ namespace Calendar_LawrenceChu
             {
                 var label = new Label { FontSize = 20 };
                 //TODO center
-                label.FormattedText = Date.FormattedDay(day).ToString();
+                label.FormattedText = Time.FormattedDay(day).ToString();
                 label.TextColor = Color.FromHex("#ADD8E6");
                 label.FontAttributes = FontAttributes.Bold;
                 label.HorizontalOptions = LayoutOptions.Center;

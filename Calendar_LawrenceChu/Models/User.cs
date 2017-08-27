@@ -12,7 +12,15 @@ namespace Calendar_LawrenceChu
     {
         private const string ServerRoute = "http://introtoapps.com/datastore.php";
 
-        public string Username
+        private static User currentUser = null;
+
+        public static User CurrentUser
+        {
+            get { return currentUser; }
+            set { currentUser = value; }
+        }
+
+		public string Username
         {
             get;
             set;
@@ -46,7 +54,7 @@ namespace Calendar_LawrenceChu
 
         public async Task<bool> FetchUsersFromServer()
         {
-            var uriString = string.Format("http://introtoapps.com/datastore.php?action=load&appid=215194361&objectid=user_{0}", Username.ToLower());
+            var uriString = string.Format("http://introtoapps.com/datastore.php?action=load&appid=215194361&objectid={0}_account", Username.ToLower());
             var uri = new Uri(uriString);
             var client = new HttpClient();
             var response = await client.GetAsync(uri);
@@ -54,14 +62,18 @@ namespace Calendar_LawrenceChu
             {
                 var content = await response.Content.ReadAsStringAsync();
                 var user = JsonConvert.DeserializeObject<User>(content);
-                return this.Password == user.Password;
+                var result = this.Password == user.Password;
+                if (result) {
+                    currentUser = user;
+                }
+                return result;
             }
             return false;
         }
 
         public async void PushToServer() {
             var json = JsonConvert.SerializeObject(this);
-            var uriString = string.Format("http://introtoapps.com/datastore.php?action=save&appid=215194361&objectid=user_{0}", Username.ToLower());
+            var uriString = string.Format("http://introtoapps.com/datastore.php?action=save&appid=215194361&objectid={0}_account", Username.ToLower());
 			var uri = new Uri(uriString);
 			var client = new HttpClient();
 			var pairs = new List<KeyValuePair<string, string>>

@@ -5,12 +5,20 @@
     Title="New Event" BackgroundColor="#5F9EA0">
     <StackLayout Padding="30">
         
-        <Entry Text="Title" TextColor="Silver"/>
-        <Entry Text="Location" TextColor="Silver"/>
-        <Entry Text="Starts" TextColor="Silver"/>
-        <Entry Text="Ends" TextColor="Silver"/>
-        <Entry Text="Detail" TextColor="Silver" HeightRequest="150"/>
-        <Button BackgroundColor="#B0E0E6" Clicked="Handle_Clicked" Text="SAVE" TextColor="White" FontAttributes="Bold"/>
+        <Entry x:Name="Title" TextColor="Silver" Placeholder="TitleName"/>
+        <Entry x:Name="Location" Text="" TextColor="Silver" Placeholder="Location"/>
+        <Entry x:Name="StartMinute" TextColor="Green" Placeholder="Minute"/>
+        <Entry x:Name="StartHour" TextColor="Green" Placeholder="Hour"/>
+        <Entry x:Name="StartDay" TextColor="Green" Placeholder=""/>
+        <Entry x:Name="StartMonth" TextColor="Green" Placeholder=""/>
+        <Entry x:Name="StartYear" TextColor="Green" Placeholder=""/>
+        <Entry x:Name="EndMinute" TextColor="Red" Placeholder="Minute"/>
+        <Entry x:Name="EndHour" TextColor="Red" Placeholder="Hour"/>
+        <Entry x:Name="EndDay" TextColor="Red" Placeholder=""/>
+        <Entry x:Name="EndMonth" TextColor="Red" Placeholder=""/>
+        <Entry x:Name="EndYear" TextColor="Red" Placeholder=""/>
+        <Entry x:Name="Detail" Text="Detail" TextColor="Silver" HeightRequest="30"/>
+        <Button BackgroundColor="#B0E0E6" Clicked="OnSaveClicked" Text="SAVE" TextColor="White" FontAttributes="Bold"/>
         <Label x:Name="MainLabel" HorizontalTextAlignment="Start" TextColor = "White" FontSize="15" FontAttributes="Bold"/>
         
     </StackLayout>

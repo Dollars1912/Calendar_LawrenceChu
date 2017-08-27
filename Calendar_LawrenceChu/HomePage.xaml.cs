@@ -15,6 +15,7 @@ namespace Calendar_LawrenceChu
         async void OnLoginClicked(object sender, System.EventArgs e)
         {
             User user = new User(Username.Text, Password.Text);
+            //user.PushToServer();
             var isLoginSuccess = await user.Login();
             if (isLoginSuccess) {
                 await Navigation.PushAsync(new YearPage());

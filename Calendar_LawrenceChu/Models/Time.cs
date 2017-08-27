@@ -1,29 +1,48 @@
 ﻿using System;
 namespace Calendar_LawrenceChu
 {
-    public class Date
+    public class Time
     {
-        public static int Year
+        private static Time currentTime = new Time(0,0,0,0,0);
+
+		public static Time CurrentTime
+		{
+			get { return currentTime; }
+			set { currentTime = value; }
+		}
+
+        public int Year
         {
             get;
             set;
         }
 
-        public static int Month
+        public int Month
         {
             get;
             set;
         }
 
-        public static int Day
+        public int Day
         {
             get;
             set;
         }
 
-        public static String FormattedMonth()
+		public int Hour
+		{
+			get;
+			set;
+		}
+
+		public int Minute
+		{
+			get;
+			set;
+		}
+
+        public String FormattedMonth()
         {
-            // TODO
             switch (Month)
             {
                 case 1:
@@ -76,8 +95,13 @@ namespace Calendar_LawrenceChu
             return "";
         }
 
-        public Date()
+        public Time(int minute, int hour, int day, int month, int year)
         {
+            Minute = minute;
+            Hour = hour;
+            Day = day;
+            Month = month;
+            Year = year;
         }
     }
 }
