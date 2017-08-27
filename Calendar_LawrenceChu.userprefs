@@ -1,17 +1,16 @@
 ﻿<Properties StartupConfiguration="{BAD9C3DA-0515-4337-9E10-8543EA264521}|Default">
   <MonoDevelop.Ide.ItemProperties.Calendar__LawrenceChu.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.75F58459-5EDC-4368-B095-010C5DAEBD5E" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.DayPage.xaml.g.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Calendar_LawrenceChu/EventPage.xaml">
     <Files>
+      <File FileName="Calendar_LawrenceChu/EventPage.cs" Line="8" Column="49" />
+      <File FileName="Calendar_LawrenceChu/HomePage.xaml" Line="16" Column="16" />
       <File FileName="Calendar_LawrenceChu/HomePage.xaml.cs" Line="1" Column="1" />
-      <File FileName="Calendar_LawrenceChu/HomePage.xaml" Line="34" Column="1" />
-      <File FileName="Calendar_LawrenceChu/EventPage.xaml.cs" Line="36" Column="1" />
-      <File FileName="Calendar_LawrenceChu/Models/Event.cs" Line="15" Column="28" />
-      <File FileName="Calendar_LawrenceChu/Calendar_LawrenceChu.csproj" Line="1" Column="1" />
-      <File FileName="Calendar_LawrenceChu/EventPage.xaml" Line="4" Column="44" />
-      <File FileName="Calendar_LawrenceChu/Models/User.cs" Line="1" Column="1" />
-      <File FileName="Calendar_LawrenceChu/EventPage.cs" Line="10" Column="25" />
-      <File FileName="Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.DayPage.xaml.g.cs" Line="15" Column="26" />
-      <File FileName="Calendar_LawrenceChu/MonthPage.cs" Line="58" Column="57" />
+      <File FileName="Calendar_LawrenceChu/NotePage.xaml" Line="10" Column="104" />
+      <File FileName="Calendar_LawrenceChu/packages.config" Line="1" Column="1" />
+      <File FileName="Calendar_LawrenceChu/YearPage.xaml" Line="30" Column="15" />
+      <File FileName="Calendar_LawrenceChu/MonthPage.xaml" Line="7" Column="15" />
+      <File FileName="Calendar_LawrenceChu/NotePage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Calendar_LawrenceChu/EventPage.xaml" Line="27" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

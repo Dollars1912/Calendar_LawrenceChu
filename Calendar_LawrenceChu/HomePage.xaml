@@ -6,7 +6,7 @@
 
     <StackLayout BackgroundColor="#5F9EA0" Padding="40">
         <Grid Padding="0,40,0,50">
-        <Label Text="Welcome to Calendar!" FontAttributes="Bold" TextColor="White" FontSize="40" HorizontalOptions="Center"/>
+        <Label Text="Welcome to Calendar!" FontAttributes="Bold" TextColor="White" FontSize="30" HorizontalOptions="Center"/>
         </Grid>    
 
         <Entry x:Name="Username" Placeholder="Username" FontSize="14" TextColor="Gray" FontAttributes="Italic" HeightRequest="35"/>

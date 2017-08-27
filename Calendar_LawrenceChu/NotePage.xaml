@@ -7,7 +7,7 @@
 
     <StackLayout Padding="33">
         <Label Text="Add Notes Here" FontSize = "25" TextColor = "White" FontAttributes = "Italic" HorizontalTextAlignment = "Start"/>
-        <Entry HeightRequest = "200" HorizontalTextAlignment="Start"/>
+        <Entry HeightRequest = "200" HorizontalTextAlignment="Start" Placeholder="Take your note here!"/>
         <Button BackgroundColor="#B0E0E6" Clicked="Button_Clicked" Text="SAVE" TextColor="White" FontAttributes="Bold"/>
         <Label x:Name="MainLabel" HorizontalTextAlignment="Start" TextColor = "White" FontSize="15" FontAttributes="Bold"/>
     </StackLayout>
