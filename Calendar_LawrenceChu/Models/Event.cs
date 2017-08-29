@@ -63,10 +63,11 @@ namespace Calendar_LawrenceChu
 			set;
 		}
 
-        public Event(User creater, string title, Time startTime, Time endTime)
+        public Event(User creater, string title, string detail, Time startTime, Time endTime)
         {
             this.Creater = creater;
             this.Title = title;
+            this.Description = detail;
             this.StartTime = startTime;
             this.EndTime = endTime;
         }

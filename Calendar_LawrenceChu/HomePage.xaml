@@ -5,17 +5,16 @@
     Title="Login">
 
     <StackLayout BackgroundColor="#5F9EA0" Padding="40">
-        <Grid Padding="0,40,0,50">
-        <Label Text="Welcome to Calendar!" FontAttributes="Bold" TextColor="White" FontSize="30" HorizontalOptions="Center"/>
-        </Grid>    
-
-        <Entry x:Name="Username" Placeholder="Username" FontSize="14" TextColor="Gray" FontAttributes="Italic" HeightRequest="35"/>
-
-        <Grid Padding="0,0,0,65">
-        <Entry x:Name="Password" Placeholder="Password" FontSize="14" TextColor="Gray" FontAttributes="Italic" HeightRequest="35"/>  
+        <Grid Padding="0,40,0,60">
+        <Label Text="Welcome to Calendar!" FontAttributes="Bold" TextColor="White" FontSize="35"/>
         </Grid>
 
-        <Grid Padding="0,40,0,50">
+        <Grid Padding="0,30,0,0">
+        <Entry x:Name="Username" Placeholder="Username" FontSize="14" TextColor="Gray" FontAttributes="Italic" HeightRequest="35"/>
+        </Grid>
+        <Entry x:Name="Password" Placeholder="Password" FontSize="14" TextColor="Gray" FontAttributes="Italic" HeightRequest="35"/>  
+
+        <Grid Padding="0,0,0,30">
         <Label x:Name= "Message" Text="" FontAttributes="Bold" TextColor="Red" FontSize="20" HorizontalOptions="Center"/>
         </Grid> 
         
@@ -25,8 +24,10 @@
                 BackgroundColor="#B0E0E6"
                 TextColor="White" FontAttributes="Bold" HeightRequest="40"/>
         </Grid>
-
+        <Label Text="Haven't got an account yet?" TextColor="White" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center"/>
+        <Button Text="Resgister now!" BackgroundColor="#B0E0E6" TextColor="White" FontAttributes="Bold"/>
         <Button Text="Skip" TextColor="White" FontAttributes="Bold" Clicked="OnSkipClicked"/>
+
 
     </StackLayout>
     

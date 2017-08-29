@@ -15,6 +15,7 @@ namespace Calendar_LawrenceChu
         void OnSaveClicked(object sender, System.EventArgs e)
         {
             var title = Title.Text;
+            var detail = Detail.Text;
             var starTime = new Time(Int32.Parse(StartMinute.Text),
                 Int32.Parse(StartHour.Text),
                 Int32.Parse(StartDay.Text),
@@ -27,7 +28,7 @@ namespace Calendar_LawrenceChu
 				Int32.Parse(EndMonth.Text),
 				Int32.Parse(EndYear.Text));
             
-            var newEvent = new Event(User.CurrentUser, title, starTime, endTime);
+            var newEvent = new Event(User.CurrentUser, title, detail, starTime, endTime);
             newEvent.PushToServer();
             MainLabel.Text = "Well Done!";
         }
