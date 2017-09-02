@@ -20,7 +20,7 @@
         <Entry x:Name="Detail" HeightRequest="30" Placeholder="Detail"/>
         <Button BackgroundColor="#B0E0E6" Clicked="OnSaveClicked" Text="SAVE" TextColor="White" FontAttributes="Bold"/>
         <Label x:Name="MainLabel" HorizontalTextAlignment="Start" TextColor = "White" FontSize="15" FontAttributes="Bold"/>
-        
+        <DatePicker Format="hh:mm dd MMM yyyy" Date="00:00 25 Jan 2016" HorizontalOptions="EndAndExpand"></DatePicker>  
     </StackLayout>
     
 </ContentPage>

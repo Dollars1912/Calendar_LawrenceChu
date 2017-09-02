@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Calendar_LawrenceChu.DayPage">
+	<ContentPage.Content>
+        <TableView Intent="Data">
+            <TableRoot>
+                <TableSection Title="Events">  
+                    <ViewCell>  
+                        <StackLayout Orientation="Horizontal" Padding="13,0">
+                            <Label Text="00:00" VerticalOptions="Center"></Label>
+                            <BoxView Color="Green" WidthRequest="100"/>
+                            <BoxView Color="Yellow" />
+                        </StackLayout>  
+                    </ViewCell>
+                    <ViewCell>  
+                        <StackLayout Orientation="Horizontal" Padding="13,0">
+                            <Label Text="00:30" VerticalOptions="Center"></Label>  
+                            <BoxView Color="Green" />
+                        </StackLayout>  
+                    </ViewCell>  
+                </TableSection> 
+            </TableRoot>
+        </TableView>
+	</ContentPage.Content>
+</ContentPage>

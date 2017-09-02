@@ -54,9 +54,6 @@ namespace Calendar_LawrenceChu
                 layout.Children.Add(buttonDay);
                 buttonDay.Clicked += OnButtonDayClicked;
             }
-            async void OnButtonDayClicked(object sender, System.EventArgs e){
-                await Navigation.PushAsync(new EventPage());
-            }
 
             // add button
             var button = new Button();
@@ -69,6 +66,12 @@ namespace Calendar_LawrenceChu
             layout.Children.Add(button);
 			button.Clicked += OnButtonClicked;
         }
+
+		async void OnButtonDayClicked(object sender, System.EventArgs e)
+		{
+            await Navigation.PushAsync(new DayPage());
+		}
+
         async void OnButtonClicked(object sender, System.EventArgs e){
             await Navigation.PushAsync(new NotePage());
         }
