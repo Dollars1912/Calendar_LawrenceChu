@@ -14,6 +14,8 @@ namespace Calendar_LawrenceChu
 
         private static User currentUser = null;
 
+        private List<Event> events = new List<Event>();
+
         public static User CurrentUser
         {
             get { return currentUser; }
@@ -30,6 +32,11 @@ namespace Calendar_LawrenceChu
         {
             get;
             set;
+        }
+
+        public List<Event> Events 
+        {
+            get { return events; }
         }
 
         public User()

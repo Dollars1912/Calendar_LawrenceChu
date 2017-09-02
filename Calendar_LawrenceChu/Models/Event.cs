@@ -39,13 +39,13 @@ namespace Calendar_LawrenceChu
 			set;
 		}
 
-		public Time StartTime
+        public DateTime StartTime
 		{
 			get;
 			set;
 		}
 
-		public Time EndTime
+		public DateTime EndTime
 		{
 			get;
 			set;
@@ -63,7 +63,7 @@ namespace Calendar_LawrenceChu
 			set;
 		}
 
-        public Event(User creater, string title, string detail, Time startTime, Time endTime)
+        public Event(User creater, string title, string detail, DateTime startTime, DateTime endTime)
         {
             this.Creater = creater;
             this.Title = title;

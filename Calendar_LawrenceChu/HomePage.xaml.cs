@@ -28,6 +28,7 @@ namespace Calendar_LawrenceChu
         async void OnSkipClicked(object sender, System.EventArgs e)
         {
 			User user = new User();
+            User.CurrentUser = user;
 			await Navigation.PushAsync(new YearPage());
         }
     }

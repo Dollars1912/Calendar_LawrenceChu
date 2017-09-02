@@ -2,18 +2,11 @@
   <MonoDevelop.Ide.ItemProperties.Calendar__LawrenceChu.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.75F58459-5EDC-4368-B095-010C5DAEBD5E" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Calendar_LawrenceChu/DayPage.xaml.cs">
     <Files>
-      <File FileName="Calendar_LawrenceChu/DayPage.cs" Line="1" Column="1" />
-      <File FileName="Calendar_LawrenceChu/DayPage.xaml.cs" Line="21" Column="83" />
-      <File FileName="Calendar_LawrenceChu/MonthPage.xaml" Line="5" Column="60" />
-      <File FileName="Calendar_LawrenceChu/MonthPage.cs" Line="74" Column="9" />
-      <File FileName="Calendar_LawrenceChu/EventPage.xaml" Line="23" Column="121" />
-      <File FileName="Calendar_LawrenceChu/EventPage.cs" Line="29" Column="32" />
-      <File FileName="Calendar_LawrenceChu/App.xaml.cs" Line="12" Column="33" />
-      <File FileName="Calendar_LawrenceChu/App.xaml" Line="9" Column="1" />
-      <File FileName="Calendar_LawrenceChu/DayPage.xaml" Line="24" Column="15" />
-      <File FileName="Calendar_LawrenceChu/YearPage.xaml.cs" Line="25" Column="28" />
-      <File FileName="Calendar_LawrenceChu/NotePage.xaml.cs" Line="14" Column="28" />
-      <File FileName="Calendar_LawrenceChu/HomePage.xaml.cs" Line="28" Column="45" />
+      <File FileName="Calendar_LawrenceChu/EventPage.xaml" Line="16" Column="23" />
+      <File FileName="Calendar_LawrenceChu/EventPage.cs" Line="25" Column="13" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="Calendar_LawrenceChu/YearPage.xaml.cs" Line="1" Column="14" />
+      <File FileName="Calendar_LawrenceChu/DayPage.xaml.cs" Line="39" Column="64" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

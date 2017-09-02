@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using System;
 
 namespace Calendar_LawrenceChu
 {
@@ -17,7 +18,7 @@ namespace Calendar_LawrenceChu
             title.FontSize = 40;
             title.TranslationX = 19;
             title.TranslationY = 40;
-            title.Text = Time.CurrentTime.FormattedMonth();
+            title.Text = Time.FormattedMonth(Time.CurrentTime.Month);
             title.TextColor = Color.White;
             layout.Children.Add(title);
 
@@ -69,6 +70,7 @@ namespace Calendar_LawrenceChu
 
 		async void OnButtonDayClicked(object sender, System.EventArgs e)
 		{
+            Time.SetDay(Int32.Parse(((Button)sender).Text));
             await Navigation.PushAsync(new DayPage());
 		}
 

@@ -4,23 +4,19 @@
     x:Class="Calendar_LawrenceChu.EventPage"
     Title="New Event" BackgroundColor="#5F9EA0">
     <StackLayout Padding="30">
-        
         <Entry x:Name="Title" Placeholder="TitleName"/>
         <Entry x:Name="Location" Placeholder="Location"/>
-        <Entry x:Name="StartMinute" TextColor="Blue" Placeholder="StartMinute"/>
-        <Entry x:Name="StartHour" TextColor="Blue" Placeholder="StartHour"/>
-        <Entry x:Name="StartDay" TextColor="Blue" Placeholder="StartDD"/>
-        <Entry x:Name="StartMonth" TextColor="Blue" Placeholder="StartMM"/>
-        <Entry x:Name="StartYear" TextColor="Blue" Placeholder="StartYYYY"/>
-        <Entry x:Name="EndMinute" TextColor="Red" Placeholder="EndMinute"/>
-        <Entry x:Name="EndHour" TextColor="Red" Placeholder="EndHour"/>
-        <Entry x:Name="EndDay" TextColor="Red" Placeholder="EndDD"/>
-        <Entry x:Name="EndMonth" TextColor="Red" Placeholder="EndMM"/>
-        <Entry x:Name="EndYear" TextColor="Red" Placeholder="EndYYYY"/>
+        <StackLayout Padding="30" Orientation="Horizontal"> 
+            <Label Text= "StartTime" TextColor = "White" FontSize="15" FontAttributes="Bold"/>
+            <TimePicker x:Name="StartTimePicker" Time="00:00" HorizontalOptions="EndAndExpand"></TimePicker>
+        </StackLayout>
+        <StackLayout Padding="30" Orientation="Horizontal"> 
+            <Label Text= "EndTime" TextColor = "White" FontSize="15" FontAttributes="Bold"/>
+            <TimePicker x:Name="EndTimePicker" Time="00:00" HorizontalOptions="EndAndExpand"></TimePicker>            
+        </StackLayout>
         <Entry x:Name="Detail" HeightRequest="30" Placeholder="Detail"/>
         <Button BackgroundColor="#B0E0E6" Clicked="OnSaveClicked" Text="SAVE" TextColor="White" FontAttributes="Bold"/>
         <Label x:Name="MainLabel" HorizontalTextAlignment="Start" TextColor = "White" FontSize="15" FontAttributes="Bold"/>
-        <DatePicker Format="hh:mm dd MMM yyyy" Date="00:00 25 Jan 2016" HorizontalOptions="EndAndExpand"></DatePicker>  
     </StackLayout>
     
 </ContentPage>

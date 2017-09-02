@@ -23,16 +23,30 @@ namespace Calendar_LawrenceChu
             staticStackLayout.Children.Add(createEventButton);
 			tableSection.Add(new ViewCell { View = staticStackLayout });
             // Add 24 hours
-            for (int i = 0; i < 24; i++) {
+            for (int hour = 0; hour < 24; hour++) {
 				StackLayout stackLayout = new StackLayout { Orientation = StackOrientation.Horizontal, Padding = new Thickness(13, 0) };
-                Label hourLabel = new Label { Text = string.Format("{00}:00", i), VerticalOptions = LayoutOptions.Center };
+                Label hourLabel = new Label { Text = string.Format("{00}:00", hour), VerticalOptions = LayoutOptions.Center };
 
 				stackLayout.Children.Add(hourLabel);
                 // Add events
 
-				//stackLayout.Children.Add(eventRect);
+                List<Event> userEvents = User.CurrentUser.Events;
+                for (int j = 0; j < userEvents.Count; j++)
+                {
+                    if (userEvents[j].StartTime.Year == Time.CurrentTime.Year
+                        && userEvents[j].StartTime.Month == Time.CurrentTime.Month
+                        && userEvents[j].StartTime.Day == Time.CurrentTime.Day)
+                    {
+                        if (userEvents[j].StartTime.Hour <= hour
+                            && userEvents[j].EndTime.Hour >= hour
+                           ) 
+                        {
+							stackLayout.Children.Add(AddEvent());
+						}
+					}
+                }
 
-				ViewCell cell = new ViewCell { View = stackLayout };
+                ViewCell cell = new ViewCell { View = stackLayout };
 				tableSection.Add(cell);
             }
 
