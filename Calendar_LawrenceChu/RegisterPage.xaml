@@ -1,35 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="Calendar_LawrenceChu.HomePage"
-    Title="Login">
+    x:Class="Calendar_LawrenceChu.RegisterPage"
+    Title="Register">
 
-    <StackLayout BackgroundColor="#5F9EA0" Padding="40">
+     <StackLayout BackgroundColor="#5F9EA0" Padding="40">
         <Grid Padding="0,40,0,60">
-        <Label Text="Welcome to Calendar!" FontAttributes="Bold" TextColor="White" FontSize="35"/>
+        <Label Text="Register now!" FontAttributes="Bold" TextColor="White" FontSize="35"/>
         </Grid>
 
         <Grid Padding="0,30,0,0">
         <Entry x:Name="Username" Placeholder="Username" FontSize="14" TextColor="Gray" FontAttributes="Italic" HeightRequest="35"/>
         </Grid>
         <Entry x:Name="Password" Placeholder="Password" FontSize="14" TextColor="Gray" FontAttributes="Italic" HeightRequest="35"/>  
+        <Entry x:Name="comfirm" Placeholder="comfirm Password" FontSize="14" TextColor="Gray" FontAttributes="Italic" HeightRequest="35"/>  
 
         <Grid Padding="0,0,0,30">
         <Label x:Name= "Message" Text="" FontAttributes="Bold" TextColor="Red" FontSize="20" HorizontalOptions="Center"/>
         </Grid> 
         
         <Grid Padding="0,0,0,10">
-        <Button Clicked="OnLoginClicked" 
-                Text="Login in" 
-                BackgroundColor="#B0E0E6"
-                TextColor="White" FontAttributes="Bold" HeightRequest="40"/>
+            <Button Text="Resgister now!" BackgroundColor="#B0E0E6" TextColor="White" FontAttributes="Bold"/>
         </Grid>
-        <Label Text="Haven't got an account yet?" TextColor="White" FontSize="16" FontAttributes="Bold" HorizontalOptions="Center"/>
-        <Button Text="Resgister now!" BackgroundColor="#B0E0E6" TextColor="White" FontAttributes="Bold"
-        Clicked="OnRegisterClicked"/>
-        <Button Text="Skip" TextColor="White" FontAttributes="Bold" Clicked="OnSkipClicked"/>
 
 
     </StackLayout>
-    
 </ContentPage>

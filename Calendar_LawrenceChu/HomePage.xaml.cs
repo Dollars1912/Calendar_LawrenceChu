@@ -25,6 +25,11 @@ namespace Calendar_LawrenceChu
 
         }
 
+        async void OnRegisterClicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new RegisterPage());
+        }
+
         async void OnSkipClicked(object sender, System.EventArgs e)
         {
 			User user = new User();

@@ -66,7 +66,5 @@ namespace Calendar_LawrenceChu
 			BoxView eventRect = new BoxView { Color = Color.Green, WidthRequest = 100 };
             return eventRect;
 		}
-
-
     }
 }

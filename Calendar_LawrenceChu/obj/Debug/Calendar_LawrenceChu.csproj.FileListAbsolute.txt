@@ -61,3 +61,4 @@
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.DayPage.xaml.g.cs
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.dll
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.pdb
+/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/obj/Debug/Calendar_LawrenceChu.RegisterPage.xaml.g.cs
