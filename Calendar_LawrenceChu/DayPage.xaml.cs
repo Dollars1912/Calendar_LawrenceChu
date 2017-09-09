@@ -41,7 +41,7 @@ namespace Calendar_LawrenceChu
                             && userEvents[j].EndTime.Hour >= hour
                            ) 
                         {
-							stackLayout.Children.Add(AddEvent());
+							stackLayout.Children.Add(AddEvent(userEvents[j]));
 						}
 					}
                 }
@@ -59,11 +59,19 @@ namespace Calendar_LawrenceChu
         }
 
         async void OnCreateEventButtonClicked(object sender, System.EventArgs e) {
-            await Navigation.PushAsync(new EventPage());
+            var newPage = new EventPage(null);
+            await Navigation.PushAsync(newPage);
   		}
 
-        private BoxView AddEvent() {
+        private BoxView AddEvent(Event eve) {
 			BoxView eventRect = new BoxView { Color = Color.Green, WidthRequest = 100 };
+			var onClick = new TapGestureRecognizer();
+			onClick.Tapped += (sender, e) =>
+			{
+				var newPage = new EventPage(eve);
+				Navigation.PushAsync(newPage);
+		    };
+			eventRect.GestureRecognizers.Add(onClick);
             return eventRect;
 		}
     }

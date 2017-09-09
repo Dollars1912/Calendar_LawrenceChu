@@ -7,9 +7,13 @@ namespace Calendar_LawrenceChu
 {
     public partial class EventPage : ContentPage
     {
-        public EventPage()
+        public EventPage(Event e)
         {
             InitializeComponent();
+            if (e == null)
+                return;
+            //TODO
+            Title.Text = e.Title;
         }
 
         void OnSaveClicked(object sender, System.EventArgs e)
