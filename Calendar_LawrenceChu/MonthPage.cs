@@ -70,7 +70,7 @@ namespace Calendar_LawrenceChu
 
 		async void OnButtonDayClicked(object sender, System.EventArgs e)
 		{
-            Time.SetDay(Int32.Parse(((Button)sender).Text));
+            Time.SetDay(Int32.Parse(((Button) sender).Text));
             await Navigation.PushAsync(new DayPage());
 		}
 

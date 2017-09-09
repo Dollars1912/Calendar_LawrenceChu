@@ -33,12 +33,6 @@ namespace Calendar_LawrenceChu
             //TODO
         }
 
-		public User Creater
-		{
-			get;
-			set;
-		}
-
         public DateTime StartTime
 		{
 			get;
@@ -63,29 +57,12 @@ namespace Calendar_LawrenceChu
 			set;
 		}
 
-        public Event(User creater, string title, string detail, DateTime startTime, DateTime endTime)
+        public Event(string title, string detail, DateTime startTime, DateTime endTime)
         {
-            this.Creater = creater;
             this.Title = title;
             this.Description = detail;
             this.StartTime = startTime;
             this.EndTime = endTime;
-        }
-
-        public async void PushToServer()
-        {
-            var createdAt = DateTime.Now.ToString("yyyyMMddHHmmss");
-            var data = JsonConvert.SerializeObject(this);
-            var json = "{\"event" + createdAt + "\":" + data + "}";
-            var uriString = string.Format("http://introtoapps.com/datastore.php?action=append&appid=215194361&objectid={0}_event", Creater.Username.ToLower());
-            var uri = new Uri(uriString);
-            var client = new HttpClient();
-            var pairs = new List<KeyValuePair<string, string>>
-            {
-                new KeyValuePair<string, string>("data", json)
-            };
-            var content = new FormUrlEncodedContent(pairs);
-            var response = await client.PostAsync(uri, content);
         }
     }
 }

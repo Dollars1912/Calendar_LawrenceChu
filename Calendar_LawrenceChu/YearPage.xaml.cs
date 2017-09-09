@@ -9,6 +9,7 @@ namespace Calendar_LawrenceChu
     {
         public YearPage()
         {
+            Time.SetYear(2017);
             InitializeComponent();
         }
 

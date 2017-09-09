@@ -19,18 +19,18 @@ namespace Calendar_LawrenceChu
             var pickedStartTime = StartTimePicker.Time;
 			var pickedEndTime = EndTimePicker.Time;
 
-            string dateTime = string.Format("{0}/{1}/{2} {3}:{4}", Time.CurrentTime.Day, Time.CurrentTime.Month, Time.CurrentTime.Year,
+            string dateTime = string.Format("{0}/{1}/{2} {3}:{4}", Time.CurrentTime.Year, Time.CurrentTime.Month, Time.CurrentTime.Day,
                                             pickedStartTime.Hours, pickedStartTime.Minutes);
 			DateTime startTime = Convert.ToDateTime(dateTime);
 
-			dateTime = string.Format("{0}/{1}/{2} {3}:{4}", Time.CurrentTime.Day, Time.CurrentTime.Month, Time.CurrentTime.Year,
+			dateTime = string.Format("{0}/{1}/{2} {3}:{4}", Time.CurrentTime.Year, Time.CurrentTime.Month, Time.CurrentTime.Day,
 											pickedEndTime.Hours, pickedEndTime.Minutes);
 			DateTime endTime = Convert.ToDateTime(dateTime);
 
-			var newEvent = new Event(User.CurrentUser, title, detail, startTime, endTime);
+			var newEvent = new Event(title, detail, startTime, endTime);
             User.CurrentUser.Events.Add(newEvent);
 
-            //newEvent.PushToServer();
+            User.CurrentUser.PushToServer();
             MainLabel.Text = "Well Done!";
             Navigation.PushAsync(new DayPage());
         }

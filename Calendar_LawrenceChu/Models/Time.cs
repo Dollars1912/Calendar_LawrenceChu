@@ -6,21 +6,21 @@ namespace Calendar_LawrenceChu
         public static DateTime CurrentTime = new DateTime();
 
         public static void SetYear(int year) {
-            string date = string.Format("{0}/{1}/{2}", CurrentTime.Day, CurrentTime.Month, year);
+			string date = string.Format("{0}/{1}/{2}", year, CurrentTime.Month, CurrentTime.Day);
 			DateTime dt = Convert.ToDateTime(date);
 			CurrentTime = dt;
         }
 
 		public static void SetMonth(int month)
 		{
-            string date = string.Format("{0}/{1}/{2}", CurrentTime.Day, month, CurrentTime.Year);
+            string date = string.Format("{0}/{1}/{2}", CurrentTime.Year , month, CurrentTime.Day);
 			DateTime dt = Convert.ToDateTime(date);
 			Time.CurrentTime = dt;
 		}
 
 		public static void SetDay(int day)
 		{
-            string date = string.Format("{0}/{1}/{2}", day, CurrentTime.Month, CurrentTime.Year);
+            string date = string.Format("{0}/{1}/{2}", CurrentTime.Year, CurrentTime.Month, day);
            	DateTime dt = Convert.ToDateTime(date);
 			Time.CurrentTime = dt;
 		}

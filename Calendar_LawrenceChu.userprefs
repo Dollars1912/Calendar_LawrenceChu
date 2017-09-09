@@ -1,18 +1,21 @@
 ﻿<Properties StartupConfiguration="{BAD9C3DA-0515-4337-9E10-8543EA264521}|Default">
   <MonoDevelop.Ide.ItemProperties.Calendar__LawrenceChu.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.75F58459-5EDC-4368-B095-010C5DAEBD5E" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Calendar_LawrenceChu/DayPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Calendar_LawrenceChu/EventPage.cs">
     <Files>
-      <File FileName="Calendar_LawrenceChu/RegisterPage.xaml" Line="20" Column="17" />
-      <File FileName="Calendar_LawrenceChu/HomePage.xaml" Line="29" Column="35" />
-      <File FileName="Calendar_LawrenceChu/HomePage.xaml.cs" Line="27" Column="9" />
-      <File FileName="Calendar_LawrenceChu/RegisterPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="Calendar_LawrenceChu/packages.config" Line="1" Column="1" />
-      <File FileName="Calendar_LawrenceChu/DayPage.xaml" Line="5" Column="11" />
+      <File FileName="Calendar_LawrenceChu/Models/Event.cs" Line="75" Column="39" />
+      <File FileName="Calendar_LawrenceChu/HomePage.xaml.cs" Line="20" Column="24" />
+      <File FileName="Calendar_LawrenceChu/MonthPage.cs" Line="74" Column="1" />
+      <File FileName="Calendar_LawrenceChu/DayPage.xaml.cs" Line="34" Column="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="Calendar_LawrenceChu/Models/User.cs" Line="93" Column="6" />
+      <File FileName="Calendar_LawrenceChu/EventPage.cs" Line="33" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/Calendar_LawrenceChu/Models/User.cs" relfile="Calendar_LawrenceChu/Models/User.cs" line="82" column="45" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
