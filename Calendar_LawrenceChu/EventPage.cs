@@ -14,6 +14,7 @@ namespace Calendar_LawrenceChu
                 return;
             //TODO
             Title.Text = e.Title;
+            Location.Text = e. Location;
         }
 
         void OnSaveClicked(object sender, System.EventArgs e)

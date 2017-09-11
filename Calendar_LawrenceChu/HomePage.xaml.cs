@@ -20,14 +20,15 @@ namespace Calendar_LawrenceChu
             if (isLoginSuccess) {
                 await Navigation.PushAsync(new YearPage());
             } else {
-                Message.Text = "Wrong username or password";
+                //Message.Text = "Wrong username or password";
+                await DisplayAlert("Error","Your password is not correct","Ok");
             }
 
         }
 
         async void OnRegisterClicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new RegisterPage());
+            await Navigation.PushModalAsync(new NavigationPage(new RegisterPage()));
         }
 
         async void OnSkipClicked(object sender, System.EventArgs e)

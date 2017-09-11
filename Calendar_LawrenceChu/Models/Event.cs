@@ -51,7 +51,7 @@ namespace Calendar_LawrenceChu
 			set;
 		}
 
-		public string Description
+		public string Location
 		{
 			get;
 			set;
@@ -60,7 +60,7 @@ namespace Calendar_LawrenceChu
         public Event(string title, string detail, DateTime startTime, DateTime endTime)
         {
             this.Title = title;
-            this.Description = detail;
+            this.Location = detail;
             this.StartTime = startTime;
             this.EndTime = endTime;
         }
