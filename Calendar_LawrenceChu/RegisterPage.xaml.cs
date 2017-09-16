@@ -20,17 +20,11 @@ namespace Calendar_LawrenceChu
             ToolbarItems.Add(toolbarItem);
         }
 
-        async void Cancel(object sender, EventArgs e)
-		{
+        async void Cancel(object sender, EventArgs e){
             await Navigation.PopModalAsync();
 		}
-        //void CancelAgain()
-        //{
-        //    Navigation.PopModalAsync();
-        //}
 
-    
-
+     
 
         async void OnRegisterClicked(object sender, System.EventArgs e)
         {
@@ -40,9 +34,9 @@ namespace Calendar_LawrenceChu
             if (isLoginSuccess)
             {
                 await DisplayAlert("Success", "Welcome   " + Username.Text, "OK");
-                //CancelAgain();
                 await Navigation.PushAsync(new YearPage());
-            }
+				//CancelAgain();
+			}
             else
 			{
                 //Message.Text = "Wrong username or password";
@@ -50,6 +44,11 @@ namespace Calendar_LawrenceChu
 			}
         }
 
+        //Cancel popup
+		//void CancelAgain()
+		//{
+		//	Navigation.PopModalAsync();
+		//}
 
 
     }

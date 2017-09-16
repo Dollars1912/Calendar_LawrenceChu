@@ -14,7 +14,7 @@
             <Label Text= "EndTime" TextColor = "White" FontSize="15" FontAttributes="Bold"/>
             <TimePicker x:Name="EndTimePicker" Time="00:00" HorizontalOptions="EndAndExpand"></TimePicker>            
         </StackLayout>
-        <Entry x:Name="Detail" HeightRequest="30" Placeholder="Detail"/>
+        <Entry x:Name="Detail" HeightRequest="100" Placeholder="Detail"/>
         <Button BackgroundColor="#B0E0E6" Clicked="OnSaveClicked" Text="SAVE" TextColor="White" FontAttributes="Bold"/>
         <Label x:Name="MainLabel" HorizontalTextAlignment="Start" TextColor = "White" FontSize="15" FontAttributes="Bold"/>
     </StackLayout>

@@ -57,12 +57,19 @@ namespace Calendar_LawrenceChu
 			set;
 		}
 
-        public Event(string title, string detail, DateTime startTime, DateTime endTime)
+		public string Detail
+		{
+			get;
+			set;
+		}
+
+        public Event(string title, string location, string detail, DateTime startTime, DateTime endTime)
         {
             this.Title = title;
-            this.Location = detail;
+            this.Location = location;
             this.StartTime = startTime;
             this.EndTime = endTime;
+            this.Detail = detail;
         }
     }
 }

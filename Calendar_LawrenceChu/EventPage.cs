@@ -12,14 +12,21 @@ namespace Calendar_LawrenceChu
             InitializeComponent();
             if (e == null)
                 return;
+            
             //TODO
-            Title.Text = e.Title;
-            Location.Text = e. Location;
-        }
+            //Show event pull from server
 
+            Title.Text = e.Title;
+            Location.Text = e.Location;
+            Detail.Text = e.Detail;
+            //StartTimePicker.Time = e.StartTime;
+            //EndTimePicker.Time = e.EndTime;
+        }
+            
         void OnSaveClicked(object sender, System.EventArgs e)
         {
             var title = Title.Text;
+            var location = Location.Text;
             var detail = Detail.Text;
             var pickedStartTime = StartTimePicker.Time;
 			var pickedEndTime = EndTimePicker.Time;
@@ -32,7 +39,7 @@ namespace Calendar_LawrenceChu
 											pickedEndTime.Hours, pickedEndTime.Minutes);
 			DateTime endTime = Convert.ToDateTime(dateTime);
 
-			var newEvent = new Event(title, detail, startTime, endTime);
+			var newEvent = new Event(title, location, detail, startTime, endTime);
             User.CurrentUser.Events.Add(newEvent);
 
             User.CurrentUser.PushToServer();

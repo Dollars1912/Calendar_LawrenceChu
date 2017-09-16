@@ -13,11 +13,7 @@
         <Entry x:Name="Username" Placeholder="Username" FontSize="14" TextColor="Gray" FontAttributes="Italic" HeightRequest="35"/>
         </Grid>
         <Entry x:Name="Password" Placeholder="Password" FontSize="14" TextColor="Gray" FontAttributes="Italic" HeightRequest="35"/>  
-<!--        <Entry x:Name="comfirm" Placeholder="comfirm Password" FontSize="14" TextColor="Gray" FontAttributes="Italic" HeightRequest="35"/>  -->
-
-        <Grid Padding="0,0,0,30">
-        <Label x:Name= "Message" Text="" FontAttributes="Bold" TextColor="Red" FontSize="20" HorizontalOptions="Center"/>
-        </Grid> 
+<!--    <Entry x:Name="comfirm" Placeholder="comfirm Password" FontSize="14" TextColor="Gray" FontAttributes="Italic" HeightRequest="35"/>  -->
         
         <Grid Padding="0,0,0,10">
             <Button Text="Resgister now!" Clicked="OnRegisterClicked" BackgroundColor="#B0E0E6" TextColor="White" FontAttributes="Bold"/>
