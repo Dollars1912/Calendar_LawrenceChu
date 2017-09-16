@@ -5,12 +5,16 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.IO;
 using System.Diagnostics;
+using SQLite;
 
-namespace Calendar_LawrenceChu
+namespace Calendar_LawrenceChu.Models
 {
     public class Event
     {
         private static List<Event> events;
+
+		[PrimaryKey, AutoIncrement]
+		public int ID { get; set; }
 
         public static List<Event> Events 
         {
@@ -33,16 +37,17 @@ namespace Calendar_LawrenceChu
             //TODO
         }
 
-        public DateTime StartTime
-		{
-			get;
-			set;
-		}
+        public string StartTimeString { get; set; }
+        public string EndTimeString { get; set; }
 
-		public DateTime EndTime
+        public DateTime StartTime() 
+        {
+            return Convert.ToDateTime(StartTimeString);
+        }
+
+		public DateTime EndTime()
 		{
-			get;
-			set;
+			return Convert.ToDateTime(EndTimeString);
 		}
 
 		public string Title
@@ -63,13 +68,18 @@ namespace Calendar_LawrenceChu
 			set;
 		}
 
-        public Event(string title, string location, string detail, DateTime startTime, DateTime endTime)
+        public Event(string title, string location, string detail, string startTime, string endTime)
         {
             this.Title = title;
             this.Location = location;
-            this.StartTime = startTime;
-            this.EndTime = endTime;
+            this.StartTimeString = startTime;
+            this.EndTimeString = endTime;
             this.Detail = detail;
+        }
+
+        public Event()
+        {
+            //TODO set to default valye
         }
     }
 }

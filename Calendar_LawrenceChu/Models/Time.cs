@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Calendar_LawrenceChu
+namespace Calendar_LawrenceChu.Models
 {
     public class Time
     {

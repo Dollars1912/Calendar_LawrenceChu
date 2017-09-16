@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using Calendar_LawrenceChu.Models;
 using Xamarin.Forms;
 
 namespace Calendar_LawrenceChu
@@ -33,12 +33,12 @@ namespace Calendar_LawrenceChu
                 List<Event> userEvents = User.CurrentUser.Events;
                 for (int j = 0; j < userEvents.Count; j++)
                 {
-                    if (userEvents[j].StartTime.Year == Time.CurrentTime.Year
-                        && userEvents[j].StartTime.Month == Time.CurrentTime.Month
-                        && userEvents[j].StartTime.Day == Time.CurrentTime.Day)
+                    if (userEvents[j].StartTime().Year == Time.CurrentTime.Year
+                        && userEvents[j].StartTime().Month == Time.CurrentTime.Month
+                        && userEvents[j].StartTime().Day == Time.CurrentTime.Day)
                     {
-                        if (userEvents[j].StartTime.Hour <= hour
-                            && userEvents[j].EndTime.Hour >= hour
+                        if (userEvents[j].StartTime().Hour <= hour
+                            && userEvents[j].EndTime().Hour >= hour
                            ) 
                         {
 							stackLayout.Children.Add(AddEvent(userEvents[j]));

@@ -5,8 +5,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.IO;
 using System.Diagnostics;
+using SQLite;
 
-namespace Calendar_LawrenceChu
+namespace Calendar_LawrenceChu.Models
 {
     public class User
     {
@@ -15,6 +16,9 @@ namespace Calendar_LawrenceChu
         private static User currentUser = null;
 
         private List<Event> events = new List<Event>();
+
+        [PrimaryKey, AutoIncrement]
+        public int ID { get; set; }
 
         public static User CurrentUser
         {

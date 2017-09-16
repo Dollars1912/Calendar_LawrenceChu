@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using Calendar_LawrenceChu.Models;
 using Xamarin.Forms;
 
 namespace Calendar_LawrenceChu

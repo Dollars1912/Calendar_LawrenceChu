@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-
 using Xamarin.Forms;
+using Calendar_LawrenceChu.Models;
 
 namespace Calendar_LawrenceChu
 {
@@ -18,6 +18,7 @@ namespace Calendar_LawrenceChu
 			//user.PushToServer();
             var isLoginSuccess = await user.Login();
             if (isLoginSuccess) {
+                //await DataBase.Instance.SaveItemAsync(user);
                 await Navigation.PushAsync(new YearPage());
             } else {
                 //Message.Text = "Wrong username or password";
