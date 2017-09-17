@@ -42,7 +42,8 @@ namespace Calendar_LawrenceChu
 
             User.CurrentUser.PushToServer();
             MainLabel.Text = "Well Done!";
-			Navigation.PushAsync(new DayPage());
-        }
+            Navigation.PopAsync();
+			//Navigation.PushAsync(new DayPage());
+		}
     }
 }
