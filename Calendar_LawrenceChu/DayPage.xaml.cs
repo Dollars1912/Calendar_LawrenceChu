@@ -58,10 +58,11 @@ namespace Calendar_LawrenceChu
 			};
         }
 
-        async void OnCreateEventButtonClicked(object sender, System.EventArgs e) {
-            var newPage = new EventPage(null);
-            await Navigation.PushAsync(newPage);
-  		}
+		async void OnCreateEventButtonClicked(object sender, System.EventArgs e)
+		{
+			var newPage = new EventPage(null);
+			await Navigation.PushAsync(newPage);
+		}
 
         private BoxView AddEvent(Event eve) {
             BoxView eventRect = new BoxView { Color = Color.FromHex("#45B39D"), WidthRequest = 65 };

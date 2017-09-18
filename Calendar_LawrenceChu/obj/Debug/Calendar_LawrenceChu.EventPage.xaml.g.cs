@@ -30,6 +30,9 @@ namespace Calendar_LawrenceChu {
         private global::Xamarin.Forms.Entry Detail;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Maps.Map MyMap;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(EventPage));
             Title = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Entry>(this, "Title");
@@ -37,6 +40,7 @@ namespace Calendar_LawrenceChu {
             StartTimePicker = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.TimePicker>(this, "StartTimePicker");
             EndTimePicker = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.TimePicker>(this, "EndTimePicker");
             Detail = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Entry>(this, "Detail");
+            MyMap = global::Xamarin.Forms.NameScopeExtensions.FindByName <global::Xamarin.Forms.Maps.Map>(this, "MyMap");
         }
     }
 }

@@ -25,7 +25,7 @@
         <Entry x:Name="Location" Placeholder="Location"/>
         <StackLayout Orientation="Horizontal"> 
             <Label Text= "StartTime" TextColor = "White" FontSize="15" FontAttributes="Bold"/>
-            <TimePicker x:Name="StartTimePicker" Time="00:00" HorizontalOptions="   "></TimePicker>
+            <TimePicker x:Name="StartTimePicker" Time="00:00" HorizontalOptions="EndAndExpand"></TimePicker>
         </StackLayout>
         <StackLayout Orientation="Horizontal"> 
             <Label Text= "EndTime" TextColor = "White" FontSize="15" FontAttributes="Bold"/>
@@ -33,12 +33,12 @@
         </StackLayout>
         <Entry x:Name="Detail" HeightRequest="100" Placeholder="Detail"/>
         
-        <!--<StackLayout VerticalOptions="StartAndExpand" Padding="20">
-        <maps:Map WidthRequest="300" HeightRequest="250"
+        <StackLayout VerticalOptions="StartAndExpand">
+        <maps:Map WidthRequest="300" HeightRequest="220"
             x:Name="MyMap"
             IsShowingUser="true"
             MapType="Hybrid"/>
-        </StackLayout>-->
+        </StackLayout>
         
         <Button BackgroundColor="#B0E0E6" Clicked="OnSaveClicked" Text="SAVE" TextColor="White" FontAttributes="Bold"/>
     </StackLayout>
