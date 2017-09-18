@@ -64,7 +64,7 @@ namespace Calendar_LawrenceChu
   		}
 
         private BoxView AddEvent(Event eve) {
-			BoxView eventRect = new BoxView { Color = Color.Green, WidthRequest = 100 };
+            BoxView eventRect = new BoxView { Color = Color.FromHex("#45B39D"), WidthRequest = 65 };
 			var onClick = new TapGestureRecognizer();
 			onClick.Tapped += (sender, e) =>
 			{

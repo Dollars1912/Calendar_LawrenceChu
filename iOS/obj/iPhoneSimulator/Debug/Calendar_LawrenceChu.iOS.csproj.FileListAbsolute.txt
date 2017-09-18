@@ -68,12 +68,16 @@
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/SQLitePCLRaw.core.dll
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/SQLitePCLRaw.provider.sqlite3.dll
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.dll
+/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Maps.dll
+/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Maps.iOS.dll
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.dll
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Platform.iOS.dll
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.dll
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Calendar_LawrenceChu.pdb
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Calendar_LawrenceChu.dll.config
+/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/SQLite-net.pdb
+/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/SQLite-net.xml
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.pdb
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.dll.mdb
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Core.xml
@@ -82,8 +86,7 @@
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.pdb
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.dll.mdb
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Xaml.xml
-/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/SQLite-net.pdb
-/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/SQLite-net.xml
+/Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Xamarin.Forms.Maps.xml
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.xml
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/ar/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/DOLLARS1912/Projects/Calendar_LawrenceChu/iOS/bin/iPhoneSimulator/Debug/ca/Xamarin.Forms.Platform.iOS.resources.dll

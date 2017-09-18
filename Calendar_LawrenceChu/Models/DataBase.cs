@@ -27,25 +27,25 @@ namespace Calendar_LawrenceChu.Models
         public DataBase(string dbPath)
         {
             database = new SQLiteAsyncConnection(dbPath);
-			database.CreateTableAsync<Event>().Wait();
+            database.CreateTableAsync<EventData>().Wait();
 		}
 
-		public Task<List<Event>> GetItemsAsync()
+		public Task<List<EventData>> GetItemsAsync()
 		{
-			return database.Table<Event>().ToListAsync();
+			return database.Table<EventData>().ToListAsync();
 		}
 
-		public Task<List<Event>> GetItemsNotDoneAsync()
+		public Task<List<EventData>> GetItemsNotDoneAsync()
 		{
-			return database.QueryAsync<Event>("SELECT * FROM [User] WHERE [Done] = 0");
+			return database.QueryAsync<EventData>("SELECT * FROM [User] WHERE [Done] = 0");
 		}
 
-		public Task<Event> GetItemAsync(int id)
+		public Task<EventData> GetItemAsync(int id)
 		{
-			return database.Table<Event>().Where(i => i.ID == id).FirstOrDefaultAsync();
+			return database.Table<EventData>().Where(i => i.ID == id).FirstOrDefaultAsync();
 		}
 
-		public Task<int> SaveItemAsync(Event item)
+		public Task<int> SaveItemAsync(EventData item)
 		{
 			if (item.ID != 0)
 			{
@@ -57,7 +57,7 @@ namespace Calendar_LawrenceChu.Models
 			}
 		}
 
-		public Task<int> DeleteItemAsync(Event item)
+		public Task<int> DeleteItemAsync(EventData item)
 		{
 			return database.DeleteAsync(item);
 		}

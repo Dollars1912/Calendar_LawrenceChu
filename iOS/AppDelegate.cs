@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
 using Foundation;
 using UIKit;
+using Xamarin.Forms.Maps;
+using Xamarin.Forms;
 
 namespace Calendar_LawrenceChu.iOS
 {
@@ -13,10 +14,9 @@ namespace Calendar_LawrenceChu.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-
-            LoadApplication(new App());
-
-            return base.FinishedLaunching(app, options);
+			Xamarin.FormsMaps.Init();
+			LoadApplication(new App());
+			return base.FinishedLaunching(app, options);
         }
     }
 }

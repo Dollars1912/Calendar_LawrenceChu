@@ -13,8 +13,8 @@ namespace Calendar_LawrenceChu.Models
     {
         private static List<Event> events;
 
-		[PrimaryKey, AutoIncrement]
-		public int ID { get; set; }
+		//[PrimaryKey, AutoIncrement]
+		//public int ID { get; set; }
 
         public static List<Event> Events 
         {

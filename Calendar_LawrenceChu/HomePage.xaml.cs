@@ -19,12 +19,16 @@ namespace Calendar_LawrenceChu
             var isLoginSuccess = await user.Login();
             if (isLoginSuccess) {
                 //await DataBase.Instance.SaveItemAsync(user);
+
+                //todo most finished
+                var events = (EventData)BindingContext;
+                await DataBase.Instance.SaveItemAsync(events);
+
                 await Navigation.PushAsync(new YearPage());
             } else {
                 //Message.Text = "Wrong username or password";
                 await DisplayAlert("Error","Your password is not correct","Ok");
             }
-
         }
 
         async void OnRegisterClicked(object sender, System.EventArgs e)

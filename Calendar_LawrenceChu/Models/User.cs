@@ -17,8 +17,8 @@ namespace Calendar_LawrenceChu.Models
 
         private List<Event> events = new List<Event>();
 
-        [PrimaryKey, AutoIncrement]
-        public int ID { get; set; }
+        //[PrimaryKey, AutoIncrement]
+        //public int ID { get; set; }
 
         public static User CurrentUser
         {
