@@ -4,22 +4,7 @@
     x:Class="Calendar_LawrenceChu.EventPage"
     Title="New Event" BackgroundColor="#5F9EA0"
     xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
-    <!--<StackLayout Padding="30">
-        <Entry x:Name="Title" Placeholder="TitleName"/>
-        <Entry x:Name="Location" Placeholder="Location"/>
-        <StackLayout Padding="30" Orientation="Horizontal"> 
-            <Label Text= "StartTime" TextColor = "White" FontSize="15" FontAttributes="Bold"/>
-            <TimePicker x:Name="StartTimePicker" Time="00:00" HorizontalOptions="EndAndExpand"></TimePicker>
-        </StackLayout>
-        <StackLayout Padding="30" Orientation="Horizontal"> 
-            <Label Text= "EndTime" TextColor = "White" FontSize="15" FontAttributes="Bold"/>
-            <TimePicker x:Name="EndTimePicker" Time="00:00" HorizontalOptions="EndAndExpand"></TimePicker>            
-        </StackLayout>
-        <Entry x:Name="Detail" HeightRequest="100" Placeholder="Detail"/>
-        <Button BackgroundColor="#B0E0E6" Clicked="OnSaveClicked" Text="SAVE" TextColor="White" FontAttributes="Bold"/>
-        <Label x:Name="MainLabel" HorizontalTextAlignment="Start" TextColor = "White" FontSize="15" FontAttributes="Bold"/>
-    </StackLayout>-->
-
+    
     <StackLayout Padding="30">
         <Entry x:Name="Title" Placeholder="TitleName"/>
         <Entry x:Name="Location" Placeholder="Location"/>
@@ -37,7 +22,8 @@
         <maps:Map WidthRequest="300" HeightRequest="220"
             x:Name="MyMap"
             IsShowingUser="true"
-            MapType="Hybrid"/>
+            MapType="Hybrid"
+            />
         </StackLayout>
         
         <Button BackgroundColor="#B0E0E6" Clicked="OnSaveClicked" Text="SAVE" TextColor="White" FontAttributes="Bold"/>

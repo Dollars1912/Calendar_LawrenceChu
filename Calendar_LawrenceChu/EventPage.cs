@@ -11,6 +11,10 @@ namespace Calendar_LawrenceChu
         public EventPage(Event e)
         {
             InitializeComponent();
+            MyMap.MoveToRegion(
+                MapSpan.FromCenterAndRadius(
+                    new Position(-37.846740, 145.115113), Distance.FromMiles(1))
+            );
             if (e == null)
                 return;
 
@@ -21,9 +25,6 @@ namespace Calendar_LawrenceChu
             Detail.Text = e.Detail;
             //StartTimePicker.Time = e.StartTime;
             //EndTimePicker.Time = e.EndTime;
-
-            MyMap.MoveToRegion(
-                MapSpan.FromCenterAndRadius(new Position(-37.846740, 145.115113), Distance.FromMiles(1)));
         }
 
         void OnSaveClicked(object sender, System.EventArgs e)

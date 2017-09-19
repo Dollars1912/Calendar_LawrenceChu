@@ -7,9 +7,12 @@ namespace Calendar_LawrenceChu
 {
     public partial class DayPage : ContentPage
     {
+
+
         public DayPage()
         {
-			//InitializeComponent();
+            //InitializeComponent();
+            //myList();
 
 			TableView tableView = new TableView { };
 			tableView.Root = new TableRoot();
@@ -56,6 +59,19 @@ namespace Calendar_LawrenceChu
 			        tableView
 		        }
 			};
+        }
+
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+			List<EventData> list = await Calendar_LawrenceChu.Models.DataBase.Instance.GetItemsAsync();
+
+			if (list.Count != 0)
+			{
+				EventData item = await Calendar_LawrenceChu.Models.DataBase.Instance.LoadBase();
+			}
         }
 
 		async void OnCreateEventButtonClicked(object sender, System.EventArgs e)

@@ -10,14 +10,36 @@ namespace Calendar_LawrenceChu
         public HomePage()
         {
             InitializeComponent();
+
+            myList();
         }
+
+        public async void myList()
+        {
+
+            List<EventData> list = await Calendar_LawrenceChu.Models.DataBase.Instance.GetItemsAsync();
+
+            if (list.Count != 0)
+            {
+                await Navigation.PushAsync(new YearPage());
+            }
+            else
+            {
+
+            }
+
+
+        }
+
+
 
         async void OnLoginClicked(object sender, System.EventArgs e)
         {
             User user = new User(Username.Text, Password.Text);
-			//user.PushToServer();
+            //user.PushToServer();
             var isLoginSuccess = await user.Login();
-            if (isLoginSuccess) {
+            if (isLoginSuccess)
+            {
                 //await DataBase.Instance.SaveItemAsync(user);
 
                 //todo most finished
@@ -25,9 +47,11 @@ namespace Calendar_LawrenceChu
                 await DataBase.Instance.SaveItemAsync(events);
 
                 await Navigation.PushAsync(new YearPage());
-            } else {
+            }
+            else
+            {
                 //Message.Text = "Wrong username or password";
-                await DisplayAlert("Error","Your password is not correct","Ok");
+                await DisplayAlert("Error", "Your password is not correct", "Ok");
             }
         }
 
@@ -38,9 +62,9 @@ namespace Calendar_LawrenceChu
 
         async void OnSkipClicked(object sender, System.EventArgs e)
         {
-			User user = new User();
+            User user = new User();
             User.CurrentUser = user;
-			await Navigation.PushAsync(new YearPage());
+            await Navigation.PushAsync(new YearPage());
         }
     }
 }

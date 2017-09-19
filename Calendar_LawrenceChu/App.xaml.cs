@@ -1,21 +1,29 @@
 ﻿using Xamarin.Forms;
 using Calendar_LawrenceChu.Models;
+using System.Collections.Generic;
 
 
 namespace Calendar_LawrenceChu
 {
     public partial class App : Application
     {
-        public App()
+
+		public App()
         {
             InitializeComponent();
 
 			//MainPage = new Calendar_LawrenceChuPage();
-            MainPage = new NavigationPage(new HomePage
-            {
-                BindingContext = new EventData()
-            });
+
+			MainPage = new NavigationPage(new HomePage
+			{
+				BindingContext = new EventData()
+			});
+        
+
+		
 		}
+
+	
 
         protected override void OnStart()
         {

@@ -57,6 +57,14 @@ namespace Calendar_LawrenceChu.Models
 			}
 		}
 
+        public Task<EventData>  LoadBase() {
+
+            return database.Table<EventData>().FirstOrDefaultAsync();
+        }
+
+
+
+
 		public Task<int> DeleteItemAsync(EventData item)
 		{
 			return database.DeleteAsync(item);
