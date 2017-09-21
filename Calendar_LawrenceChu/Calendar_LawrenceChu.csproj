@@ -79,7 +79,7 @@
     </Compile>
     <Compile Include="Models\IFileHelper.cs" />
     <Compile Include="Models\DataBase.cs" />
-    <Compile Include="Models\EventData.cs" />
+    <Compile Include="Models\UserData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">

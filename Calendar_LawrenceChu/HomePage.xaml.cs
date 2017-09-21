@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Xamarin.Forms;
 using Calendar_LawrenceChu.Models;
+//using System.Security.Cryptography.SHA256;
 
 namespace Calendar_LawrenceChu
 {
@@ -10,47 +11,48 @@ namespace Calendar_LawrenceChu
         public HomePage()
         {
             InitializeComponent();
-
             myList();
         }
 
         public async void myList()
         {
 
-            List<EventData> list = await Calendar_LawrenceChu.Models.DataBase.Instance.GetItemsAsync();
+            List<UserData> list = await Calendar_LawrenceChu.Models.DataBase.Instance.GetItemsAsync();
+
+			//if (list.Count != 0)
+			//{
+			//}
 
             if (list.Count != 0)
             {
-                await Navigation.PushAsync(new YearPage());
+				UserData userData = await Calendar_LawrenceChu.Models.DataBase.Instance.LoadUser();
+                User user = new User(userData.Username, userData.Password);
+				var isLoginSuccess = await user.Login();
+				if (isLoginSuccess)
+				{
+					//var userData = new UserData();
+					userData.Username = user.Username;
+					userData.Password = user.Password;
+					await DataBase.Instance.SaveItemAsync(userData);
+					await Navigation.PushAsync(new YearPage());
+				}
             }
-            else
-            {
-
-            }
-
-
         }
-
-
 
         async void OnLoginClicked(object sender, System.EventArgs e)
         {
             User user = new User(Username.Text, Password.Text);
-            //user.PushToServer();
             var isLoginSuccess = await user.Login();
             if (isLoginSuccess)
             {
-                //await DataBase.Instance.SaveItemAsync(user);
-
-                //todo most finished
-                var events = (EventData)BindingContext;
-                await DataBase.Instance.SaveItemAsync(events);
-
+                var userData = new UserData();
+                userData.Username = user.Username;
+                userData.Password = user.Password;
+                await DataBase.Instance.SaveItemAsync(userData);
                 await Navigation.PushAsync(new YearPage());
             }
             else
             {
-                //Message.Text = "Wrong username or password";
                 await DisplayAlert("Error", "Your password is not correct", "Ok");
             }
         }

@@ -33,5 +33,6 @@
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination" type="retina55"/>
+        <simulatedOrientationMetrics key="orientation"/>
     </simulatedMetricsContainer>
 </document>

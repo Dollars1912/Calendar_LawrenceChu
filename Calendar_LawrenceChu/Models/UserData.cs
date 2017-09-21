@@ -5,7 +5,7 @@ using SQLite;
 
 namespace Calendar_LawrenceChu
 {
-	public class EventData
+	public class UserData
 	{
 		[PrimaryKey, AutoIncrement]
 		public int ID { get; set; }
@@ -14,4 +14,3 @@ namespace Calendar_LawrenceChu
 		//public bool Read { get; set; }
 	}
 }
-

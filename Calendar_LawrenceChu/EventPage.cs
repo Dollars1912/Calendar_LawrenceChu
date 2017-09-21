@@ -8,6 +8,8 @@ namespace Calendar_LawrenceChu
 {
     public partial class EventPage : ContentPage
     {
+        //private DayPage dayPage;
+
         public EventPage(Event e)
         {
             InitializeComponent();
@@ -45,7 +47,9 @@ namespace Calendar_LawrenceChu
 
             User.CurrentUser.PushToServer();
             //Navigation.PopAsync();
+            //dayPage = new DayPage();
             Navigation.PushAsync(new DayPage());
+
         }
     }
 }

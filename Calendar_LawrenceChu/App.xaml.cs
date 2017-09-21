@@ -1,7 +1,7 @@
 ﻿using Xamarin.Forms;
 using Calendar_LawrenceChu.Models;
 using System.Collections.Generic;
-
+using System;
 
 namespace Calendar_LawrenceChu
 {
@@ -14,16 +14,13 @@ namespace Calendar_LawrenceChu
 
 			//MainPage = new Calendar_LawrenceChuPage();
 
-			MainPage = new NavigationPage(new HomePage
-			{
-				BindingContext = new EventData()
-			});
-        
+			//MainPage = new NavigationPage(new HomePage
+			//{
+			//	BindingContext = new EventData()
+			//});
 
-		
+			MainPage = new NavigationPage(new HomePage());
 		}
-
-	
 
         protected override void OnStart()
         {

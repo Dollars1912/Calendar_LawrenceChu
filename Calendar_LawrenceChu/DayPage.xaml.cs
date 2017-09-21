@@ -7,7 +7,7 @@ namespace Calendar_LawrenceChu
 {
     public partial class DayPage : ContentPage
     {
-
+        private EventPage lastEventPage;
 
         public DayPage()
         {
@@ -65,13 +65,8 @@ namespace Calendar_LawrenceChu
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-
-			List<EventData> list = await Calendar_LawrenceChu.Models.DataBase.Instance.GetItemsAsync();
-
-			if (list.Count != 0)
-			{
-				EventData item = await Calendar_LawrenceChu.Models.DataBase.Instance.LoadBase();
-			}
+            if (lastEventPage != null)
+                Navigation.RemovePage(lastEventPage);
         }
 
 		async void OnCreateEventButtonClicked(object sender, System.EventArgs e)
@@ -85,8 +80,8 @@ namespace Calendar_LawrenceChu
 			var onClick = new TapGestureRecognizer();
 			onClick.Tapped += (sender, e) =>
 			{
-				var newPage = new EventPage(eve);
-				Navigation.PushAsync(newPage);
+				lastEventPage = new EventPage(eve);
+				Navigation.PushAsync(lastEventPage);
 		    };
 			eventRect.GestureRecognizers.Add(onClick);
             return eventRect;

@@ -7,6 +7,7 @@
         <TableView Intent="Data">
             <TableRoot>
                 <TableSection Title="Events">
+                    
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Padding="13,0">
                             <Label Text="00:00" VerticalOptions="Center"></Label>
@@ -14,12 +15,14 @@
                             <BoxView Color="Yellow"/>
                         </StackLayout>
                     </ViewCell>
+                    
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Padding="13,0">
                             <Label Text="00:30" VerticalOptions="Center"></Label>
                             <BoxView Color="Green"/>
                         </StackLayout>
-                    </ViewCell>  
+                    </ViewCell>
+                    
                 </TableSection> 
             </TableRoot>
         </TableView>

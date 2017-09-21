@@ -24,8 +24,6 @@ namespace Calendar_LawrenceChu
             await Navigation.PopModalAsync();
 		}
 
-     
-
         async void OnRegisterClicked(object sender, System.EventArgs e)
         {
 			User user = new User(Username.Text, Password.Text);

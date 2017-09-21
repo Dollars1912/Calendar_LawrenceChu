@@ -1,6 +1,7 @@
 ﻿using Xamarin.Forms;
 using System;
 using Calendar_LawrenceChu.Models;
+using System.Collections.Generic;
 
 namespace Calendar_LawrenceChu
 {
@@ -10,7 +11,7 @@ namespace Calendar_LawrenceChu
         {
             InitializeComponent();
 
-            var layout = new AbsoluteLayout { Padding = new Thickness(5, 10)};
+            var layout = new AbsoluteLayout { Padding = new Thickness(5, 10) };
             this.Content = layout;
 
             // add title
@@ -66,7 +67,7 @@ namespace Calendar_LawrenceChu
             button.TranslationX = 240;
             button.TranslationY = 50;
             layout.Children.Add(button);
-			button.Clicked += OnButtonClicked;
+            button.Clicked += OnButtonClicked;
         }
 
 		async void OnButtonDayClicked(object sender, System.EventArgs e)

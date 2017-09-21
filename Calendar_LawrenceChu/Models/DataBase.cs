@@ -27,25 +27,25 @@ namespace Calendar_LawrenceChu.Models
         public DataBase(string dbPath)
         {
             database = new SQLiteAsyncConnection(dbPath);
-            database.CreateTableAsync<EventData>().Wait();
+            database.CreateTableAsync<UserData>().Wait();
 		}
 
-		public Task<List<EventData>> GetItemsAsync()
+		public Task<List<UserData>> GetItemsAsync()
 		{
-			return database.Table<EventData>().ToListAsync();
+			return database.Table<UserData>().ToListAsync();
 		}
 
-		public Task<List<EventData>> GetItemsNotDoneAsync()
+		public Task<List<UserData>> GetItemsNotDoneAsync()
 		{
-			return database.QueryAsync<EventData>("SELECT * FROM [User] WHERE [Done] = 0");
+			return database.QueryAsync<UserData>("SELECT * FROM [User] WHERE [Done] = 0");
 		}
 
-		public Task<EventData> GetItemAsync(int id)
+		public Task<UserData> GetItemAsync(int id)
 		{
-			return database.Table<EventData>().Where(i => i.ID == id).FirstOrDefaultAsync();
+			return database.Table<UserData>().Where(i => i.ID == id).FirstOrDefaultAsync();
 		}
 
-		public Task<int> SaveItemAsync(EventData item)
+		public Task<int> SaveItemAsync(UserData item)
 		{
 			if (item.ID != 0)
 			{
@@ -57,15 +57,15 @@ namespace Calendar_LawrenceChu.Models
 			}
 		}
 
-        public Task<EventData>  LoadBase() {
+        public Task<UserData>  LoadUser() {
 
-            return database.Table<EventData>().FirstOrDefaultAsync();
+            return database.Table<UserData>().FirstOrDefaultAsync();
         }
 
 
 
 
-		public Task<int> DeleteItemAsync(EventData item)
+		public Task<int> DeleteItemAsync(UserData item)
 		{
 			return database.DeleteAsync(item);
 		}
