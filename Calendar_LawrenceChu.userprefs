@@ -1,17 +1,12 @@
 ﻿<Properties StartupConfiguration="{BAD9C3DA-0515-4337-9E10-8543EA264521}|Default">
   <MonoDevelop.Ide.ItemProperties.Calendar__LawrenceChu.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.75F58459-5EDC-4368-B095-010C5DAEBD5E" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Calendar_LawrenceChu/Models/DataBase.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Calendar_LawrenceChu/MonthPage.cs">
     <Files>
-      <File FileName="Calendar_LawrenceChu/Models/DataBase.cs" Line="52" Column="32" />
+      <File FileName="Calendar_LawrenceChu/MonthPage.cs" Line="19" Column="42" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>list</Value>
-          <Value>user</Value>
-          <Value>userData</Value>
-          <Value>Password</Value>
-        </State>
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

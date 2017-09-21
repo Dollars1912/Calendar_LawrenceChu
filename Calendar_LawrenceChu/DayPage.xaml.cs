@@ -5,11 +5,12 @@ using Xamarin.Forms;
 
 namespace Calendar_LawrenceChu
 {
-    public partial class DayPage : ContentPage
-    {
-        private EventPage lastEventPage;
 
-        public DayPage()
+	public partial class DayPage : ContentPage
+    {
+        //private EventPage lastEventPage;
+
+		public DayPage()
         {
             //InitializeComponent();
             //myList();
@@ -61,13 +62,14 @@ namespace Calendar_LawrenceChu
 			};
         }
 
-
-        protected override async void OnAppearing()
-        {
-            base.OnAppearing();
-            if (lastEventPage != null)
-                Navigation.RemovePage(lastEventPage);
-        }
+        //protected override async void OnAppearing()
+        //{
+        //    base.OnAppearing();
+        //    if (lastEventPage != null)
+        //    {
+        //        Navigation.RemovePage(lastEventPage);
+        //    }
+        //}
 
 		async void OnCreateEventButtonClicked(object sender, System.EventArgs e)
 		{
@@ -80,8 +82,8 @@ namespace Calendar_LawrenceChu
 			var onClick = new TapGestureRecognizer();
 			onClick.Tapped += (sender, e) =>
 			{
-				lastEventPage = new EventPage(eve);
-				Navigation.PushAsync(lastEventPage);
+				var newpage = new EventPage(eve);
+                Navigation.PushAsync(newpage);
 		    };
 			eventRect.GestureRecognizers.Add(onClick);
             return eventRect;

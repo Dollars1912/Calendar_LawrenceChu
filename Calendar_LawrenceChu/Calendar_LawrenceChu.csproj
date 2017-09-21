@@ -80,6 +80,7 @@
     <Compile Include="Models\IFileHelper.cs" />
     <Compile Include="Models\DataBase.cs" />
     <Compile Include="Models\UserData.cs" />
+    <Compile Include="Security.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">

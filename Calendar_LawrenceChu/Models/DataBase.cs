@@ -62,12 +62,14 @@ namespace Calendar_LawrenceChu.Models
             return database.Table<UserData>().FirstOrDefaultAsync();
         }
 
-
-
-
 		public Task<int> DeleteItemAsync(UserData item)
 		{
 			return database.DeleteAsync(item);
 		}
+
+        public void DeleteAccount()
+        {
+            database.ExecuteAsync("DELETE FROM UserData");   
+        }
     }
 }

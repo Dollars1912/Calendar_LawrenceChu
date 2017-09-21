@@ -11,6 +11,18 @@ namespace Calendar_LawrenceChu
         {
             InitializeComponent();
 
+            ToolbarItem toolbarItem = new ToolbarItem
+            {
+                Text ="Logout"
+            };
+            ToolbarItems.Add(toolbarItem);
+            toolbarItem.Clicked += (object sender, EventArgs e) => {
+                
+                DataBase.Instance.DeleteAccount();
+                Navigation.PushModalAsync(new NavigationPage(new HomePage()));
+
+            };
+
             var layout = new AbsoluteLayout { Padding = new Thickness(5, 10) };
             this.Content = layout;
 

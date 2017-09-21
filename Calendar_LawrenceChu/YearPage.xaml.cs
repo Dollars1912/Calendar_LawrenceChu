@@ -11,6 +11,17 @@ namespace Calendar_LawrenceChu
         {
             Time.SetYear(2017);
             InitializeComponent();
+
+			ToolbarItem toolbarItem = new ToolbarItem
+			{
+				Text = "Logout"
+			};
+			ToolbarItems.Add(toolbarItem);
+			toolbarItem.Clicked += (object sender, EventArgs e) =>
+			{
+                DataBase.Instance.DeleteAccount();
+                Navigation.PushModalAsync(new NavigationPage(new HomePage()));
+			};
         }
 
         void OnPlusOrMinusClicked(object sender, System.EventArgs e)

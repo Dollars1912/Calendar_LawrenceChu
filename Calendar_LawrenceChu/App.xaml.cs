@@ -11,20 +11,12 @@ namespace Calendar_LawrenceChu
 		public App()
         {
             InitializeComponent();
-
-			//MainPage = new Calendar_LawrenceChuPage();
-
-			//MainPage = new NavigationPage(new HomePage
-			//{
-			//	BindingContext = new EventData()
-			//});
-
 			MainPage = new NavigationPage(new HomePage());
 		}
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+			// Handle when your app starts
         }
 
         protected override void OnSleep()
