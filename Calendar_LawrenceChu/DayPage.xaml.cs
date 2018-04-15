@@ -12,8 +12,18 @@ namespace Calendar_LawrenceChu
 
 		public DayPage()
         {
-            //InitializeComponent();
-            //myList();
+			//InitializeComponent();
+			//myList();
+
+			ToolbarItem toolbarItem = new ToolbarItem
+			{
+				Text = "Back"
+			};
+			ToolbarItems.Add(toolbarItem);
+            toolbarItem.Clicked += (object sender, EventArgs e) =>
+            {
+                Navigation.PushAsync(new YearPage());
+			};
 
 			TableView tableView = new TableView { };
 			tableView.Root = new TableRoot();
